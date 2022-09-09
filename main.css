@@ -1,17 +1,164 @@
+:root{
+    --main-btn-blue: #0A3871;
+    --main-btn-blue2: #0f53a5;
+    --main-btn-white: rgb(177, 197, 241);
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+/***************************** Index del Juego ***********************/
+
+.img-init{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+}
+
 .btn-init{
-    border: 1px solid red;
-    height: 50px;
-    width: 400px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 0 24px 100px;
+    gap: 8px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 317px;
+    height: 100px;
+    left: 761px;
+    top: 300px;
+    background: var(--main-btn-blue);
+    border-radius: 24px;
+    border: 0;
 }
 
-.btn-word{
-    border: 1px solid black;
-    height: 50px;
-    width: 400px;
+.btn-init:hover{
+    background: var(--main-btn-blue2);
 }
 
-.game{
-    border: 1px solid black;
-    height: 50px;
-    width: 400px;
+.btn-init2{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 0 24px 74px;
+    gap: 8px;
+    position: absolute;
+    width: 290px;
+    height: 75px;
+    left: 776px;
+    top: 450px;
+    background: transparent;
+    border-radius: 24px;
+    color: var(--main-btn-blue);
+    border: 1px solid var(--main-btn-blue);
+}
+
+.btn-init2:hover{
+    background: var(--main-btn-white);
+}
+
+/***************************** Juego ***********************/
+
+.inp-word{
+    position: absolute;
+    top: 300px;
+    left: 550px;
+    font-size: 35px;
+    color: var(--main-btn-blue);
+    border: 0;
+}
+
+.btn-w-d{
+    position: absolute;
+    top: 750px;
+    left: 570px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.btn-w1{
+    position: absolute;
+    top: 800px;
+    left: 550px;
+
+    background-color: var(--main-btn-blue);
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+}
+
+.btn-w1:hover{
+    background: var(--main-btn-blue2);
+}
+
+.btn-w2{
+    position: absolute;
+    top: 800px;
+    left: 950px;
+
+    background-color: #fff;
+    border: 1px solid var(--main-btn-blue);
+    color: var(--main-btn-blue);
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+}
+
+.btn-w2:hover{
+    background: var(--main-btn-white);
+}
+
+/***************************** Game ************************/
+
+.hombre{
+    position: absolute;
+    width: 550px;
+    height: 600px;
+
+    left: 650px;
+    top: 10px;
+}
+
+.img-h{
+    width: 65%;
+}
+
+.letras{
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    top: 380px;
+    left: 420px;
+}
+
+/** LINEAS **/
+
+.lineas{
+    width: 110px;
+    height: 150px;
+    margin-top: 45px;
+    margin-left: 13.5px;
+    padding-bottom: 15px;    
+    border-bottom: 4px solid var(--main-btn-blue);
+}
+
+.tletra{
+    text-align: center;
+    margin-left: 0px;
+    font-size: 75px;
 }

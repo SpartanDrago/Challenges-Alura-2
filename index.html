@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +7,59 @@
     <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <div class="btn-init" id="btn-init">
-        <input type="button" value="Iniciar Juego" id="go">
-        <input type="button" value="Agregar Nueva Palabra" id="add">
-    </div>
-
-    <div class="btn-word" id="btn-word">
-        <input type="button" value="Guardar y Empezar">
-        <input type="button" value="Cancelar" id="cancelar">
-    </div>
-
-    <div class="game" id="game">
-        <h5>A jugar</h5>
-        <input type="button" value="Rendirse" id="rendirse">
+<body class="body">
+    <div>
+        <img src="img/Vector.png" class="img-init">
+        <div id="btn-init">
+            <input type="button" class="btn-init" value="Iniciar Juego" id="go">
+            <input type="button" class="btn-init2" value="Agregar Nueva Palabra" id="add">
+        </div>
+    
+        <div id="btn-word">
+            <input type="text" class="inp-word" value="Ingrese una Palabra">
+            <div class="btn-w-d">
+                <img src="img/Vector (2).png">
+                <h6>Max. de 8 Letras</h6>
+            </div>
+            <input type="button" class="btn-w1" value="Guardar y Empezar">
+            <input type="button" class="btn-w2" value="Cancelar" id="cancelar">
+        </div>
+    
+        <div class="game" id="game">
+            <div class="hombre">
+                <img src="img/horca.png" class="img-h">
+            </div>
+            <div class="letras" id="letras">
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+                <div class="lineas">
+                    <p class="tletra">A</p>
+                </div>
+            </div>
+            <div class="botones">
+                <input type="button" class="btn-w1" value="Nuevo juego" id="newG">
+                <input type="button" class="btn-w2" value="Rendirse" id="rendirse">
+            </div>
+        </div>
     </div>
 
     <script src="main.js"></script>

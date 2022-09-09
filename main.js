@@ -2,6 +2,7 @@ document.getElementById('btn-word').style.display = "none";
 document.getElementById('game').style.display = "none";
 
 const IniciarJuego = document.querySelector("#go");
+const Rendirme = document.querySelector('#rendirse')
 const NuevaPalabra = document.querySelector("#add");
 const Medoy = document.querySelector("#rendirse");
 const cancel = document.querySelector("#cancelar")
@@ -9,6 +10,11 @@ const cancel = document.querySelector("#cancelar")
 function Iniciar() {
     document.getElementById('btn-init').style.display = "none";
     document.getElementById('game').style.display = "";
+}
+
+function rendirse() {
+    document.getElementById('game').style.display = "none";
+    document.getElementById('btn-init').style.display = "";
 }
 
 function NewWord() {
