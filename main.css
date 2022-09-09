@@ -1,0 +1,17 @@
+.btn-init{
+    border: 1px solid red;
+    height: 50px;
+    width: 400px;
+}
+
+.btn-word{
+    border: 1px solid black;
+    height: 50px;
+    width: 400px;
+}
+
+.game{
+    border: 1px solid black;
+    height: 50px;
+    width: 400px;
+}
