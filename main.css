@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 :root{
     --main-btn-blue: #0A3871;
     --main-btn-blue2: #0f53a5;
@@ -137,28 +139,53 @@
     width: 65%;
 }
 
-.letras{
+.palabras{
     position: absolute;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 1000px;
-    height: 100px;
-    top: 380px;
+    height: auto;
+    top: 500px;
     left: 420px;
+    color: #0A3871;
 }
 
-/** LINEAS **/
-
-.lineas{
-    width: 110px;
-    height: 150px;
-    margin-top: 45px;
-    margin-left: 13.5px;
-    padding-bottom: 15px;    
-    border-bottom: 4px solid var(--main-btn-blue);
-}
-
-.tletra{
+.divpalabra{
+    display: flex;
+    justify-content: center;
+    margin:  auto 10px;
+    width: 90px;
+    height: 125px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
     text-align: center;
-    margin-left: 0px;
-    font-size: 75px;
+    border-bottom: 4px solid #0A3871;
+    border-radius: 2px;
+}
+
+.letras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    height: 120px;
+    top: 610px;
+    left: 650px;
+}
+
+.divletra{
+    display: flex;
+    justify-content: center;
+    margin:  auto 10px;
+    width: 50px;
+    height: 80px;
+    font-size: 24px;
+    color: #404957;
+    font-family: 'Inter', sans-serif;
+    border-radius: 2px;
 }

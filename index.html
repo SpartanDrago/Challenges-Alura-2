@@ -6,57 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 <body class="body">
     <div>
         <img src="img/Vector.png" class="img-init">
-        <div id="btn-init">
+        <div id="box-init">
             <input type="button" class="btn-init" value="Iniciar Juego" id="go">
             <input type="button" class="btn-init2" value="Agregar Nueva Palabra" id="add">
         </div>
     
-        <div id="btn-word">
-            <input type="text" class="inp-word" value="Ingrese una Palabra">
+        <div id="box-word">
+            <input id="inputAddPal" type="text" class="inp-word" placeholder="Ingrese un Nombre">
             <div class="btn-w-d">
                 <img src="img/Vector (2).png">
                 <h6>Max. de 8 Letras</h6>
             </div>
-            <input type="button" class="btn-w1" value="Guardar y Empezar">
+            <input type="button" class="btn-w1" value="Guardar y Empezar" id="save">
             <input type="button" class="btn-w2" value="Cancelar" id="cancelar">
         </div>
     
-        <div class="game" id="game">
+        <div id="box-game" class="game">
             <div class="hombre">
                 <img src="img/horca.png" class="img-h">
             </div>
-            <div class="letras" id="letras">
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
-                <div class="lineas">
-                    <p class="tletra">A</p>
-                </div>
+            <div class="palabras">
+               <!--Texto-->
             </div>
+            <div class="letras">
+                <!--Letras-->
+             </div>
             <div class="botones">
-                <input type="button" class="btn-w1" value="Nuevo juego" id="newG">
+                <input type="button" class="btn-w1" value="Nuevo juego" id="jugar">
                 <input type="button" class="btn-w2" value="Rendirse" id="rendirse">
             </div>
         </div>
