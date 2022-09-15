@@ -72,6 +72,7 @@
     font-size: 35px;
     color: var(--main-btn-blue);
     border: 0;
+    outline: none;
 }
 
 .btn-w-d{
@@ -187,5 +188,21 @@
     font-size: 24px;
     color: #404957;
     font-family: 'Inter', sans-serif;
+    border-radius: 2px;
+}
+
+
+.dado{
+    display: flex;
+    justify-content: center;
+    margin:  40px auto 0 auto;
+    width: 60px;
+    height: 60px;
+
+    font-size: 50px;
+    background: transparent;
+    color: #404957;
+    font-family: 'Inter', sans-serif;
+    border: none;
     border-radius: 2px;
 }
